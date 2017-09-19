@@ -1,24 +1,23 @@
-import tkinter as TK
+import tkinter as tk
 import winsound
-from tkinter import messagebox
-from tkinter import dialog
+from tkinter import messagebox as msgbox
 
-window = TK.Tk()
+window = tk.Tk()
 window.wm_withdraw()
-box = messagebox.Message()
+box = msgbox.Message()
 
 Kenshiro = "omae wa mou shindeiru"
 answer = u'no'
 while answer == u'no':
     for word in Kenshiro.split():
-        messagebox.showinfo("FIST OF THE NORTH STAR",word)
+        msgbox.showinfo("FIST OF THE NORTH STAR", word)
 
     OtherDudeWhosHeadExplode = "Nani?!!?!?!?!?!?!?!?!"
 
-    messagebox.showinfo("FIST OF THE NORTH STAR",OtherDudeWhosHeadExplode)
+    msgbox.showinfo("FIST OF THE NORTH STAR", OtherDudeWhosHeadExplode)
 
-    messagebox.showinfo("FIST OF THE NORTH STAR","Screeching sound")
+    msgbox.showinfo("FIST OF THE NORTH STAR", "Screeching sound")
 
-    winsound.Beep(1000,1000)
+    winsound.Beep(1000, 1000)
 
-    answer = messagebox.askquestion("FIST OF THE NORTH STAR","Did head explode?")
+    answer = msgbox.askquestion("FIST OF THE NORTH STAR", "Did head explode?")
